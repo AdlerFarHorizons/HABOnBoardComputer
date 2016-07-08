@@ -63,16 +63,6 @@ char collisionAvoid[]="t0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   while ( Serial.available() > 0 ) Serial.read();
 
 
-char test[100];
-
-sprintf(test,"this is a test of the system");
-
-Serial.println(test);
-stringreplace(test,' ' ,'/');
-Serial.println(test);
-
- 
-
   // Serial buffer initialization
   initSerialBuff(&GPS_Serial,&Serial1,9600);     //GPS
   initSerialBuff(&IMU_Serial,&Serial2,57600);    //IMU
